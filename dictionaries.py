@@ -25,4 +25,21 @@ for key,value in Movie.items():
 
 # is (X) key in Dictionary?
 
-print("Cast" is Movie)
+print("Cast" in Movie)
+
+#False
+# Cast is not a key of Movie
+
+if "Cast" in Movie:
+	print(Movie['Cast'])
+else:
+	print(f"Cast is not part of Movie")
+
+# Looking for values in Dictionary
+
+if "Back to the Future" in Movie.values():
+	print("Back to the future is part of Movie")
+else:
+	print("Not part of Movie Dictionary")
+
+	
